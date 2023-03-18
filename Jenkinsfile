@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				sh 'echo "Building..."'
 				sh 'chmod +x build.sh'
-				sh './build.sh'
+				sh 'build.sh'
 			}
 		}
 		stage("Test") {
@@ -17,7 +17,7 @@ pipeline {
 		stage("Deploy") {
 			steps {
 				sh 'echo "Deploying file..."'
-				sh './jenkins-test'
+				sh 'jenkins-test'
 			}
 		}	
 	}
