@@ -18,6 +18,7 @@ pipeline {
 			steps {
 				sh 'echo "Deploying file..."'
 				sh './jenkins-test'
-		}
+			}
+		}	
 	}
 }
